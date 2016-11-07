@@ -9,7 +9,7 @@
   Revised:   11-6-2016
   -->
  <title>Ginkgo Coffee Website Proposal</title>
- <link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="stylesheet" type="text/css" href="css/style.css">
  
  
 </head>
@@ -22,17 +22,60 @@ Learning Git and Github - My Reference Sheet
 Navigation Commands
 </h2>
 
+<p>
+To list your local directory, first use the <strong>ls</strong> or <strong>dir</strong> command at the Git Bash.  In my Windows environment, both of these commands listed my directories.
+<br />
+<br />
+To navigate into these folders, you will need to use the <strong>cd</strong> command followed by the name of the folder.  In my case, I had to navigate into the Program Files (x86) directory.  Because the folder has spaces in its name, the quotation marks are necessary.  The command I used was: <strong>cd "program files (x86)"</strong>
+<br />
+<br />
+</p>
+
+
 <h2>
 Initializing a stand-alone, local Git Repository
 </h2>
+
+<p>
+Once you are in the correct directory using the <strong>git init</strong> command at the Git Bash allows you to initialize your local folder for Git. On my command line in Git Bash, I typed in: <strong>git init</strong>
+<br />
+<br />
+Once you local folder is initialized, use the <strong>git add .</strong> command in the bash to prepare your local files for upload to the remote repository.  The period selects all files in that initialized folder.
+<br />
+<br />
+Next, use <strong>git commit -m"Initial Commit"</strong> at the Git Bash and then type <strong>git remote add origin https://github.com/your account name/name of repository.</strong>  This will tell Git where remotely your files will need to copy to.
+<br />
+<br />
+The last command is to upload the data to your remote repository.  Type the command <strong>git push -u origin master</strong> and watch your local files upload to the repository.
+<br />
+<br />
+</p>
 
 <h2>
 How to get the most recent code from Github
 </h2>
 
+<p>
+If you do not have the current remote repository on your local machine, you will need to browse using Git Bash to the folder you'd like to stage.  Then you can use the command <strong>git clone</strong> at the Git Bash to initialize your local folder for Git. On my command line in Git Bash, I typed in: <strong>git clone https://github.com/URL to repository</strong>
+<br />
+<br />
+The URL of your repository is shown in the repository on GitHub.com.
+<br />
+<br />
+If your local folder is ready, you can use the command <strong>git pull https://github.com/USERNAME/Repository.git</strong> and the most recent files will be pulled to your local machine for you to work on.
+<br />
+<br />
+</p>
+
 <h2>
 Adding commit changed to a Repository
 </h2>
+
+<p>
+Once the files on your local machine are ready to be committed to the remote repository, you must add these changed files to the staging area by using the command <strong>git add . </strong> (remember the period in the command adds all files) followed by the command <strong>git commit -m"Added Second comment"</strong>.   The last step is to use the command <strong>git push</strong> at the Git Bash to add the changes to those documents to the remote repository.
+<br />
+<br />
+</p>
 
 <h2>
 How to check the status of the Repository

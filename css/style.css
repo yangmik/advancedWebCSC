@@ -1,0 +1,185 @@
+/*  This style CSS file is used to stylize the following the web pages:
+
+Author:  Michael Yang (yangm54@csp.edu - ID#L00068984)
+Written by: Michael Yang (yangm54@csp.edu) ID#L00068984
+For CSC 235 Server Side - Project Web Site CSS
+Written 9/14/2016
+Revised 9/16/2016 Appplied CSS
+Revised 9/26/2016 Added H2 and Table CSS
+Revised 11/6/2016 Edits for Advanced Web Class
+*/
+
+@media print {
+/* #container {display:none !important;} */
+/* #header {display:none !important;} */
+/* #menu {display:none !important;} */
+#navmenu {display:none !important;}
+/* #left {display:none !important;} */
+#right {display:none !important;}
+#footer {display:none !important;}
+}
+
+#skip {
+display: none;
+}
+
+body {				/* body style */
+font-family:	    optima, arial, helvetica, sans-serif;
+margin:             10px;
+background:         #C3D6AA;
+}
+
+h1 {                 /* header style for all H1 element */
+background: 		#283A10;
+border:			    1px #283A10;
+color:			    #C3D6AA;
+padding:		    10px;
+}
+
+h2 {					/* header style for all H2 element */
+background: 		#283A10;
+color: 				white;
+padding: 			10px;
+border: 			1px #C3D6AA solid;
+}
+
+h3, h4, h5, h6 {	/* header style for all H3, H4, H5, H6 element */
+color:				#283A10;
+margin:				5px;
+padding:			10px;
+}
+
+img {
+float: 				right;
+margin: 			0 0 10px 10px;
+}
+
+#container {        /* this is the container that will be the parent DIV */
+width:              960px;
+margin:             0 auto;                 /* this will center container in middle */
+border-right:       1px solid #EAF7D9;
+border-left:        1px solid #EAF7D9;
+background:         #EAF7D9;
+}
+
+#header {           /* this is the header container (on top of page) that will be 1 of 5 of the child DIV */
+color:              #283A10;                /* font color in the header */
+width:              100%;                   /* header and other divs will be inside container DIVs */
+height:             150px;
+background:         #8EA86C;
+}
+
+#header p {         /* this is the style for paragraphs in the header container */
+font-family:	    optima, arial, helvetica, sans-serif;
+font-size:		    16px;
+margin:             0px 0px 10px 25px; 
+padding:            5px 5px 5px 5px;
+}
+
+#menu {             /* this is the menu container (navigation) that will be 2 of 5 of the child DIV */
+width:              100%;        
+background:         #00000;
+}
+
+#left {             /*720px total*/ /* this is the left part of the page that will be 3 of 5 of the child DIV */
+width:              725px;
+padding:            30px;                   /* 720px - 30px -30px is 660px */
+float:              left;
+background:         #EAF7D9;
+}
+
+#left p {			/* paragraph style for all left element */
+font-family:	    optima, arial, helvetica, sans-serif;
+font-size:		    16px;
+margin:             5px 0px 10px 25px; 
+padding:            5px 5px 5px 5px;	
+}
+
+#right {            /*240px total*/ /* this is the right part of the page that will be 4 of 5 of the child DIV */
+width:              150px;
+padding:            30px 15px 30px 5px;    /* 240px - 30px - 15px is 195px */
+float:              left;
+background:         #EAF7D9;
+}
+
+#footer {           /* this is the footer container (on bottom of page) that will be 5 of 5 of the child DIV */
+clear:              both;
+color:              #283A10;                /* font color in the footer */
+height:             150px;
+background:         #8EA86C;
+}
+
+#footer p {			/* paragraph style for all footer element */
+font-family:	    optima, arial, helvetica, sans-serif;
+font-size:		    10px;
+margin:             0px 5px;
+padding:            20px 10px 20px 10px;
+text-align:         center;
+}
+
+/* Form Styles */
+
+.topLabel {
+float:                left;
+display:              inline-block;
+margin:               0px 20px 0 0px; 
+}
+
+.topLabel label {
+display:               block;  /* position labels above text boxes */
+}
+
+input[type=text] {
+font-size:             1em;
+padding:               5px;
+margin:                0px;
+display:               inline;
+}
+
+select {
+font-size:             1.2em;   
+}
+
+button {
+font-size:             1em;
+padding:               10px;
+border-radius:         10px;
+background:            white;
+margin:                5px 5px;
+}
+
+fieldset {
+color:                 black;
+border:                1px solid #DDD;
+border-radius:         10px;
+}
+
+/* Table Styles */
+table {
+width:                 100%;
+}
+
+td, th {
+padding:               5px 20px;
+background:            #EEE;
+color:                 #283A10;
+}
+
+th {
+background:            #EEE;
+color:                 #283A10;
+}
+/*
+table {
+	border: 2px solid #C3D6AA ;
+	width: 100%;
+}
+
+td, th {
+	padding: 2px 15px;
+}
+
+th {
+	background: #C3D6AA ;
+	color: #283A10;
+}*/
