@@ -8,7 +8,7 @@
   Written:   11-3-2016 
   Revised:   11-6-2016
   -->
- <title>Ginkgo Coffee Website Proposal</title>
+ <title>Assignment 2 - CSC245 Git Cheat Sheet</title>
  <link rel="stylesheet" type="text/css" href="css/style.css">
  
  
@@ -72,7 +72,7 @@ Adding commit changed to a Repository
 </h2>
 
 <p>
-Once the files on your local machine are ready to be committed to the remote repository, you must add these changed files to the staging area by using the command <strong>git add . </strong> (remember the period in the command adds all files) followed by the command <strong>git commit -m"Added Second comment"</strong>.   The last step is to use the command <strong>git push</strong> at the Git Bash to add the changes to those documents to the remote repository.
+Once the files on your local machine are ready to be committed to the remote repository, you must add these changed files to the staging area by using the command <strong>git add . </strong> (remember the period in the command adds all changed files) followed by the command <strong>git commit -m"Added Second comment"</strong>.   The last step is to use the command <strong>git push</strong> at the Git Bash to add the changes to those documents to the remote repository.
 <br />
 <br />
 </p>
@@ -81,23 +81,55 @@ Once the files on your local machine are ready to be committed to the remote rep
 How to check the status of the Repository
 </h2>
 
+<p>
+Using the command <strong>git status</strong> at the Git Bash will allow you to see the current status of the Repository.  This is an important command as it lets you know if your repository is up to date or if its out of date.  The command will check to make sure that the branch repository, in this case, the repository on your local machine is current with the remote repository or Origin/Master repository.  It will also check to make sure if there are files ready to commit.
+<br />
+<br />
+</p>
+
 <h2>
 How to save your changes to a repository on GitHub
 </h2>
+
+<p>
+The <strong>git add</strong> command tracks the changes to the file and stages it for transfer.  These files are not committed until you use the <strong>git commit</strong> and the <strong>git push</strong> commands.
+<br />
+<br />
+</p>
 
 <h2>
 How to view a list of all the commits in a Repository
 </h2>
 
+<p>
+The <strong>git log</strong> command will list the commits in a Repository and is a useful tool to see who has made changes to your repository.
+<br />
+<br />
+</p>
+
 <h2>
-how to make a temporary branch from the master Repository
+How to make a temporary branch from the master Repository
 </h2>
+
+<p>
+The <strong>git branch</strong> command will allow you to list, create, or delete branches in the repository.  Branching the repository allows you to keep the main code in tact while branching or copying the repository to a branch repository and allowing you to make changes necessary.  If that branch and those changes are not needed, they can be deleted and reverted back to the original version before the branching occurred..  
+<br />
+<br />
+</p>
 
 <h2>
 How to merge a branch back into the master Repository
 </h2>
 
+<p>
+Let's say you are working on fixes on the code in a branch repository and eventually it needs to be merged back to the original code, the <strong>git merge</strong> command will allow you to merge your branch to the original repository.  
+<br />
+<br />
+<center>
+<a href="https://github.com/yangmik/advancedWebCSC" target="_blank">This is a sample link</a>
+</center>
 
+</p>
 
 </body>
 </html>
